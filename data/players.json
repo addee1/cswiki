@@ -558,5 +558,85 @@
     "country": "Belarus",
     "age": 20,
     "image": "assets/images/players/big/gr1ks.webp"
+  },
+  {
+    "id": "naf",
+    "nickname": "NAF",
+    "name": "Keith Markovic",
+    "country": "Canada",
+    "age": 28,
+    "image": "assets/images/players/liquid/naf.webp"
+  },
+  {
+    "id": "elige",
+    "nickname": "EliGE",
+    "name": "Jonathan Jablonowski",
+    "country": "United States",
+    "age": 29,
+    "image": "assets/images/players/liquid/elige.webp"
+  },
+  {
+    "id": "malbsmd",
+    "nickname": "malbsMd",
+    "name": "Mario Samayoa",
+    "country": "Guatemala",
+    "age": 23,
+    "image": "assets/images/players/liquid/malbsmd.webp"
+  },
+  {
+    "id": "jt",
+    "nickname": "JT",
+    "name": "Johnny Theodosiou",
+    "country": "South Africa",
+    "age": 27,
+    "image": "assets/images/players/liquid/jt.webp"
+  },
+  {
+    "id": "jorko",
+    "nickname": "Jorko",
+    "name": "Georgi Mitev",
+    "country": "Bulgaria",
+    "age": 17,
+    "image": "assets/images/players/liquid/jorko.webp"
+  },
+  {
+    "id": "dexter",
+    "nickname": "dexter",
+    "name": "Christopher Nong",
+    "country": "Australia",
+    "age": 32,
+    "image": "assets/images/players/thunderdownunder/dexter.webp"
+  },
+  {
+    "id": "liazz",
+    "nickname": "Liazz",
+    "name": "Jay Tregillgas",
+    "country": "Australia",
+    "age": 28,
+    "image": "assets/images/players/thunderdownunder/liazz.webp"
+  },
+  {
+    "id": "alistair",
+    "nickname": "aliStair",
+    "name": "Alistair Johnston",
+    "country": "Australia",
+    "age": 28,
+    "image": "assets/images/players/thunderdownunder/alistair.webp"
+  },
+  {
+    "id": "asap",
+    "nickname": "asap",
+    "name": "Tyson Paterson",
+    "country": "Australia",
+    "age": 23,
+    "image": "assets/images/players/thunderdownunder/asap.webp"
+  },
+  {
+    "id": "tjp",
+    "nickname": "TjP",
+    "name": "Tynan Purtell",
+    "country": "Australia",
+    "age": 24,
+    "image": "assets/images/players/thunderdownunder/tjp.webp"
   }
 ]
