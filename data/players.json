@@ -1,0 +1,562 @@
+[
+  {
+    "id": "niko",
+    "nickname": "NiKo",
+    "name": "Nikola Kovač",
+    "country": "Bosnia and Herzegovina",
+    "age": 29,
+    "image": "assets/images/players/falcons/niko.webp"
+  },
+  {
+    "id": "karrigan",
+    "nickname": "karrigan",
+    "name": "Finn Andersen",
+    "country": "Denmark",
+    "age": 36,
+    "image": "assets/images/players/falcons/karrigan.webp"
+  },
+  {
+    "id": "monesy",
+    "nickname": "m0NESY",
+    "name": "Ilya Osipov",
+    "country": "Russia",
+    "age": 21,
+    "image": "assets/images/players/falcons/monesy.webp"
+  },
+  {
+    "id": "kyousuke",
+    "nickname": "kyousuke",
+    "name": "Maksim Lukin",
+    "country": "Russia",
+    "age": 18,
+    "image": "assets/images/players/falcons/kyousuke.webp"
+  },
+  {
+    "id": "teses",
+    "nickname": "TeSeS",
+    "name": "René Madsen",
+    "country": "Denmark",
+    "age": 25,
+    "image": "assets/images/players/falcons/teses.webp"
+  },
+  {
+    "id": "sh1ro",
+    "nickname": "sh1ro",
+    "name": "Dmitry Sokolov",
+    "country": "Russia",
+    "age": 25,
+    "image": "assets/images/players/spirit/sh1ro.webp"
+  },
+  {
+    "id": "magixx",
+    "nickname": "magixx",
+    "name": "Boris Vorobiev",
+    "country": "Russia",
+    "age": 23,
+    "image": "assets/images/players/spirit/magixx.webp"
+  },
+  {
+    "id": "tn1r",
+    "nickname": "tN1R",
+    "name": "Andrey Tatarinovich",
+    "country": "Belarus",
+    "age": 25,
+    "image": "assets/images/players/spirit/tn1r.webp"
+  },
+  {
+    "id": "zont1x",
+    "nickname": "zont1x",
+    "name": "Myroslav Plakhotia",
+    "country": "Ukraine",
+    "age": 21,
+    "image": "assets/images/players/spirit/zont1x.webp"
+  },
+  {
+    "id": "donk",
+    "nickname": "donk",
+    "name": "Danil Kryshkovets",
+    "country": "Russia",
+    "age": 19,
+    "image": "assets/images/players/spirit/donk.webp"
+  },
+  {
+    "id": "fallen",
+    "nickname": "FalleN",
+    "name": "Gabriel Toledo",
+    "country": "Brazil",
+    "age": 35,
+    "image": "assets/images/players/furia/fallen.webp"
+  },
+  {
+    "id": "yuurih",
+    "nickname": "yuurih",
+    "name": "Yuri Santos",
+    "country": "Brazil",
+    "age": 26,
+    "image": "assets/images/players/furia/yuurih.webp"
+  },
+  {
+    "id": "yekindar",
+    "nickname": "YEKINDAR",
+    "name": "Mareks Gaļinskis",
+    "country": "Latvia",
+    "age": 26,
+    "image": "assets/images/players/furia/yekindar.webp"
+  },
+  {
+    "id": "kscerato",
+    "nickname": "KSCERATO",
+    "name": "Kaike Cerato",
+    "country": "Brazil",
+    "age": 26,
+    "image": "assets/images/players/furia/kscerato.webp"
+  },
+  {
+    "id": "molodoy",
+    "nickname": "molodoy",
+    "name": "Danil Golubenko",
+    "country": "Kazakhstan",
+    "age": 21,
+    "image": "assets/images/players/furia/molodoy.webp"
+  },
+  {
+    "id": "apex",
+    "nickname": "apEX",
+    "name": "Dan Madesclaire",
+    "country": "France",
+    "age": 33,
+    "image": "assets/images/players/vitality/apex.webp"
+  },
+  {
+    "id": "ropz",
+    "nickname": "ropz",
+    "name": "Robin Kool",
+    "country": "Estonia",
+    "age": 26,
+    "image": "assets/images/players/vitality/ropz.webp"
+  },
+  {
+    "id": "zywoo",
+    "nickname": "ZywOo",
+    "name": "Mathieu Herbaut",
+    "country": "France",
+    "age": 25,
+    "image": "assets/images/players/vitality/zywoo.webp"
+  },
+  {
+    "id": "flamez",
+    "nickname": "flameZ",
+    "name": "Shahar Shushan",
+    "country": "Israel",
+    "age": 23,
+    "image": "assets/images/players/vitality/flamez.webp"
+  },
+  {
+    "id": "mezii",
+    "nickname": "mezii",
+    "name": "William Merriman",
+    "country": "United Kingdom",
+    "age": 27,
+    "image": "assets/images/players/vitality/mezii.webp"
+  },
+  {
+    "id": "torzsi",
+    "nickname": "torzsi",
+    "name": "Ádám Torzsás",
+    "country": "Hungary",
+    "age": 24,
+    "image": "assets/images/players/mouz/torzsi.webp"
+  },
+  {
+    "id": "spinx",
+    "nickname": "Spinx",
+    "name": "Lotan Giladi",
+    "country": "Israel",
+    "age": 25,
+    "image": "assets/images/players/mouz/spinx.webp"
+  },
+  {
+    "id": "xertion",
+    "nickname": "xertioN",
+    "name": "Dorian Berman",
+    "country": "Israel",
+    "age": 22,
+    "image": "assets/images/players/mouz/xertion.webp"
+  },
+  {
+    "id": "pr",
+    "nickname": "PR",
+    "name": "Oldřich Nový",
+    "country": "Czech Republic",
+    "age": 18,
+    "image": "assets/images/players/mouz/pr.webp"
+  },
+  {
+    "id": "xelex",
+    "nickname": "xelex",
+    "name": "Adrian Vincze",
+    "country": "Hungary",
+    "age": 18,
+    "image": "assets/images/players/mouz/xelex.webp"
+  },
+  {
+    "id": "aleksib",
+    "nickname": "Aleksib",
+    "name": "Aleksi Virolainen",
+    "country": "Finland",
+    "age": 29,
+    "image": "assets/images/players/navi/aleksib.webp"
+  },
+  {
+    "id": "im",
+    "nickname": "iM",
+    "name": "Mihai Ivan",
+    "country": "Romania",
+    "age": 27,
+    "image": "assets/images/players/navi/im.webp"
+  },
+  {
+    "id": "b1t",
+    "nickname": "b1t",
+    "name": "Valeriy Vakhovskiy",
+    "country": "Ukraine",
+    "age": 23,
+    "image": "assets/images/players/navi/b1t.webp"
+  },
+  {
+    "id": "w0nderful",
+    "nickname": "w0nderful",
+    "name": "Ihor Zhdanov",
+    "country": "Ukraine",
+    "age": 21,
+    "image": "assets/images/players/navi/w0nderful.webp"
+  },
+  {
+    "id": "makazze",
+    "nickname": "makazze",
+    "name": "Drin Shaqiri",
+    "country": "Kosovo",
+    "age": 19,
+    "image": "assets/images/players/navi/makazze.webp"
+  },
+  {
+    "id": "max",
+    "nickname": "max",
+    "name": "Maximiliano Gonzalez",
+    "country": "Uruguay",
+    "age": 27,
+    "image": "assets/images/players/9z/max.webp"
+  },
+  {
+    "id": "dgt",
+    "nickname": "dgt",
+    "name": "Franco Garcia",
+    "country": "Uruguay",
+    "age": 25,
+    "image": "assets/images/players/9z/dgt.webp"
+  },
+  {
+    "id": "meyern",
+    "nickname": "meyern",
+    "name": "Ignacio Meyer",
+    "country": "Argentina",
+    "age": 23,
+    "image": "assets/images/players/9z/meyern.webp"
+  },
+  {
+    "id": "luchov",
+    "nickname": "luchov",
+    "name": "Luciano Herrera",
+    "country": "Argentina",
+    "age": 25,
+    "image": "assets/images/players/9z/luchov.webp"
+  },
+  {
+    "id": "huasopeek",
+    "nickname": "HUASOPEEK",
+    "name": "Matias Ibañez Hernandez",
+    "country": "Uruguay",
+    "age": 23,
+    "image": "assets/images/players/9z/huasopeek.webp"
+  },
+  {
+    "id": "frozen",
+    "nickname": "frozen",
+    "name": "David Čerňanský",
+    "country": "Slovakia",
+    "age": 24,
+    "image": "assets/images/players/faze/frozen.webp"
+  },
+  {
+    "id": "twistzz",
+    "nickname": "Twistzz",
+    "name": "Russel Van Dulken",
+    "country": "Canada",
+    "age": 26,
+    "image": "assets/images/players/faze/twistzz.webp"
+  },
+  {
+    "id": "neityu",
+    "nickname": "Neityu",
+    "name": "Ryan Aubry",
+    "country": "France",
+    "age": 21,
+    "image": "assets/images/players/faze/neityu.webp"
+  },
+  {
+    "id": "jcobbb",
+    "nickname": "jcobbb",
+    "name": "Jakub Pietruszewski",
+    "country": "Poland",
+    "age": 22,
+    "image": "assets/images/players/faze/jcobbb.webp"
+  },
+  {
+    "id": "jboen",
+    "nickname": "JBOEN",
+    "name": "Jason Boe Nielsen",
+    "country": "Denmark",
+    "age": 21,
+    "image": "assets/images/players/faze/jboen.webp"
+  },
+  {
+    "id": "hunter",
+    "nickname": "huNter-",
+    "name": "Nemanja Kovač",
+    "country": "Bosnia and Herzegovina",
+    "age": 30,
+    "image": "assets/images/players/g2/hunter.webp"
+  },
+  {
+    "id": "nertz",
+    "nickname": "NertZ",
+    "name": "Guy Iluz",
+    "country": "Israel",
+    "age": 27,
+    "image": "assets/images/players/g2/nertz.webp"
+  },
+  {
+    "id": "r1nkle",
+    "nickname": "r1nkle",
+    "name": "Artem Moroz",
+    "country": "Ukraine",
+    "age": 21,
+    "image": "assets/images/players/g2/r1nkle.webp"
+  },
+  {
+    "id": "heavygod",
+    "nickname": "HeavyGod",
+    "name": "Nikita Martynenko",
+    "country": "Israel",
+    "age": 24,
+    "image": "assets/images/players/g2/heavygod.webp"
+  },
+  {
+    "id": "matys",
+    "nickname": "MATYS",
+    "name": "Matúš Šimko",
+    "country": "Slovakia",
+    "age": 24,
+    "image": "assets/images/players/g2/matys.webp"
+  },
+  {
+    "id": "hooxi",
+    "nickname": "HooXi",
+    "name": "Rasmus Nielsen",
+    "country": "Denmark",
+    "age": 31,
+    "image": "assets/images/players/astralis/hooxi.webp"
+  },
+  {
+    "id": "phzy",
+    "nickname": "phzy",
+    "name": "Rasmus Nielsen",
+    "country": "Sweden",
+    "age": 23,
+    "image": "assets/images/players/astralis/phzy.webp"
+  },
+  {
+    "id": "jabbi",
+    "nickname": "jabbi",
+    "name": "Jakob Nygaard",
+    "country": "Denmark",
+    "age": 23,
+    "image": "assets/images/players/astralis/jabbi.webp"
+  },
+  {
+    "id": "staehr",
+    "nickname": "Staehr",
+    "name": "Victor Staehr",
+    "country": "Denmark",
+    "age": 22,
+    "image": "assets/images/players/astralis/staehr.webp"
+  },
+  {
+    "id": "ryu",
+    "nickname": "ryu",
+    "name": "Gytis Glušauskas",
+    "country": "Lithuania",
+    "age": 22,
+    "image": "assets/images/players/astralis/ryu.webp"
+  },
+  {
+    "id": "boombl4",
+    "nickname": "Boombl4",
+    "name": "Kirill Mikhailov",
+    "country": "Russia",
+    "age": 27,
+    "image": "assets/images/players/betboom/boombl4.webp"
+  },
+  {
+    "id": "zorte",
+    "nickname": "zorte",
+    "name": "Aleksandr Zagodyrenko",
+    "country": "Russia",
+    "age": 28,
+    "image": "assets/images/players/betboom/zorte.webp"
+  },
+  {
+    "id": "s1ren",
+    "nickname": "S1ren",
+    "name": "Kirill Mikhailov",
+    "country": "Russia",
+    "age": 24,
+    "image": "assets/images/players/betboom/s1ren.webp"
+  },
+  {
+    "id": "d1ledez",
+    "nickname": "d1Ledez",
+    "name": "Daniil Kustov",
+    "country": "Russia",
+    "age": 23,
+    "image": "assets/images/players/betboom/d1ledez.webp"
+  },
+  {
+    "id": "magnojez",
+    "nickname": "Magnojez",
+    "name": "Kirill Rodnov",
+    "country": "Russia",
+    "age": 21,
+    "image": "assets/images/players/betboom/magnojez.webp"
+  },
+  {
+    "id": "blitz",
+    "nickname": "bLitz",
+    "name": "Garidmagnai Byambasuren",
+    "country": "Mongolia",
+    "age": 25,
+    "image": "assets/images/players/mongolz/blitz.webp"
+  },
+  {
+    "id": "techno",
+    "nickname": "Techno",
+    "name": "Sodbayar Munkhbold",
+    "country": "Mongolia",
+    "age": 21,
+    "image": "assets/images/players/mongolz/techno.webp"
+  },
+  {
+    "id": "910",
+    "nickname": "910",
+    "name": "Usukhbayar Banzragch",
+    "country": "Mongolia",
+    "age": 24,
+    "image": "assets/images/players/mongolz/910.webp"
+  },
+  {
+    "id": "tikuak",
+    "nickname": "tikuak",
+    "name": "Zolbayar Chimedtseren",
+    "country": "Mongolia",
+    "age": 17,
+    "image": "assets/images/players/mongolz/tikuak.webp"
+  },
+  {
+    "id": "darkmeister",
+    "nickname": "DarkMeister",
+    "name": "Dugarsuren Ireedui",
+    "country": "Mongolia",
+    "age": 18,
+    "image": "assets/images/players/mongolz/darkmeister.webp"
+  },
+  {
+    "id": "vsm",
+    "nickname": "vsm",
+    "name": "Vinicius Moreira",
+    "country": "Brazil",
+    "age": 27,
+    "image": "assets/images/players/pain/vsm.webp"
+  },
+  {
+    "id": "biguzera",
+    "nickname": "biguzera",
+    "name": "Rodrigo Bittencourt",
+    "country": "Brazil",
+    "age": 29,
+    "image": "assets/images/players/pain/biguzera.webp"
+  },
+  {
+    "id": "piriajr",
+    "nickname": "piriajr",
+    "name": "Guilherme Barbosa",
+    "country": "Brazil",
+    "age": 23,
+    "image": "assets/images/players/pain/piriajr.webp"
+  },
+  {
+    "id": "saffee",
+    "nickname": "saffee",
+    "name": "Rafael Costa",
+    "country": "Brazil",
+    "age": 31,
+    "image": "assets/images/players/pain/saffee.webp"
+  },
+  {
+    "id": "snow",
+    "nickname": "snow",
+    "name": "João Vinicius",
+    "country": "Brazil",
+    "age": 19,
+    "image": "assets/images/players/pain/snow.webp"
+  },
+  {
+    "id": "tabsen",
+    "nickname": "tabseN",
+    "name": "Johannes Wodarz",
+    "country": "Germany",
+    "age": 31,
+    "image": "assets/images/players/big/tabsen.webp"
+  },
+  {
+    "id": "jdc",
+    "nickname": "JDC",
+    "name": "Jon de Castro",
+    "country": "Germany",
+    "age": 26,
+    "image": "assets/images/players/big/jdc.webp"
+  },
+  {
+    "id": "faven",
+    "nickname": "faveN",
+    "name": "Josef Baumann",
+    "country": "Germany",
+    "age": 26,
+    "image": "assets/images/players/big/faven.webp"
+  },
+  {
+    "id": "blamef",
+    "nickname": "blameF",
+    "name": "Benjamin Bremer",
+    "country": "Denmark",
+    "age": 29,
+    "image": "assets/images/players/big/blamef.webp"
+  },
+  {
+    "id": "gr1ks",
+    "nickname": "gr1ks",
+    "name": "Gleb Gazin",
+    "country": "Belarus",
+    "age": 20,
+    "image": "assets/images/players/big/gr1ks.webp"
+  }
+]

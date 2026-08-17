@@ -1,0 +1,269 @@
+[
+  {
+    "id": "team-falcons",
+    "name": "Team Falcons",
+    "shortName": "Falcons",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 1,
+    "coach": "zonic",
+    "description": "Soaring to the top with discipline, firepower, and unmatched team synergy. Falcons set the standard in CS2.",
+    "logo": "assets/images/teams/falcons-logo.png",
+    "heroImage": "assets/images/heroes/hero-falcons.png",
+    "playerIds": [
+      "niko",
+      "karrigan",
+      "monesy",
+      "kyousuke",
+      "teses"
+    ]
+  },
+  {
+    "id": "team-spirit",
+    "name": "Team Spirit",
+    "shortName": "Spirit",
+    "region": "Europe",
+    "country": "Russia",
+    "ranking": 2,
+    "coach": "hally",
+    "description": "One of the most competitive teams in professional Counter-Strike.",
+    "logo": "assets/images/teams/spirit-logo.png",
+    "heroImage": "assets/images/heroes/hero-spirit.png",
+    "playerIds": [
+      "sh1ro",
+      "magixx",
+      "tn1r",
+      "zont1x",
+      "donk"
+    ]
+  },
+  {
+    "id": "furia",
+    "name": "Furia",
+    "shortName": "Furia",
+    "region": "South America",
+    "country": "Brazil",
+    "ranking": 3,
+    "coach": "sidde",
+    "description": "One of the most competitive teams in professional Counter-Strike.",
+    "logo": "assets/images/teams/furia-logo.png",
+    "heroImage": "assets/images/heroes/hero-furia.png",
+    "playerIds": [
+      "fallen",
+      "yuurih",
+      "yekindar",
+      "kscerato",
+      "molodoy"
+    ]
+  },
+  {
+    "id": "team-vitality",
+    "name": "Team Vitality",
+    "shortName": "Vitality",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 4,
+    "coach": "xtqzzz",
+    "description": "One of the most competitive teams in professional Counter-Strike.",
+    "logo": "assets/images/teams/vitality-logo.png",
+    "heroImage": "assets/images/heroes/hero-vitality.png",
+    "playerIds": [
+      "apex",
+      "ropz",
+      "zywoo",
+      "flamez",
+      "mezii"
+    ]
+  },
+  {
+    "id": "mouz",
+    "name": "MOUZ",
+    "shortName": "MOUZ",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 5,
+    "coach": "sycrone",
+    "description": "One of the most competitive teams in professional Counter-Strike.",
+    "logo": "assets/images/teams/mouz-logo.png",
+    "heroImage": "assets/images/heroes/hero-mouz.png",
+    "playerIds": [
+      "torzsi",
+      "spinx",
+      "xertion",
+      "pr",
+      "xelex"
+    ]
+  },
+  {
+    "id": "natus-vincere",
+    "name": "Natus Vincere",
+    "shortName": "NAVI",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 6,
+    "coach": "b1ad3",
+    "description": "One of the most iconic and successful organizations in professional Counter-Strike.",
+    "logo": "assets/images/teams/natus-vincere-logo.png",
+    "heroImage": "assets/images/heroes/hero-navi.png",
+    "playerIds": [
+      "aleksib",
+      "im",
+      "b1t",
+      "w0nderful",
+      "makazze"
+    ]
+  },
+  {
+    "id": "9z-team",
+    "name": "9z Team",
+    "shortName": "9z",
+    "region": "South America",
+    "country": "South America",
+    "ranking": 7,
+    "coach": "bit",
+    "description": "One of the leading South American teams in professional Counter-Strike.",
+    "logo": "assets/images/teams/9z-logo.png",
+    "heroImage": "assets/images/heroes/hero-9z.png",
+    "playerIds": [
+      "max",
+      "dgt",
+      "meyern",
+      "luchov",
+      "huasopeek"
+    ]
+  },
+  {
+    "id": "faze-clan",
+    "name": "FaZe Clan",
+    "shortName": "FaZe",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 9,
+    "coach": "enkayj",
+    "description": "One of the most recognizable and competitive organizations in professional Counter-Strike.",
+    "logo": "assets/images/teams/faze-clan-logo.png",
+    "heroImage": "assets/images/heroes/hero-faze.png",
+    "playerIds": [
+      "frozen",
+      "twistzz",
+      "neityu",
+      "jcobbb",
+      "jboen"
+    ]
+  },
+  {
+    "id": "g2-esports",
+    "name": "G2 Esports",
+    "shortName": "G2",
+    "region": "Europe",
+    "country": "Europe",
+    "ranking": 10,
+    "coach": "sAw",
+    "description": "One of the most established and competitive organizations in professional Counter-Strike.",
+    "logo": "assets/images/teams/g2-logo.png",
+    "heroImage": "assets/images/heroes/hero-g2.png",
+    "playerIds": [
+      "hunter",
+      "nertz",
+      "r1nkle",
+      "heavygod",
+      "matys"
+    ]
+  },
+  {
+    "id": "astralis",
+    "name": "Astralis",
+    "shortName": "Astralis",
+    "region": "Europe",
+    "country": "Denmark",
+    "ranking": 11,
+    "coach": "neo",
+    "description": "One of the most historic and successful organizations in professional Counter-Strike.",
+    "logo": "assets/images/teams/astralis-logo.png",
+    "heroImage": "assets/images/heroes/hero-astralis.png",
+    "playerIds": [
+      "hooxi",
+      "phzy",
+      "jabbi",
+      "staehr",
+      "ryu"
+    ]
+  },
+  {
+    "id": "betboom-team",
+    "name": "BetBoom Team",
+    "shortName": "BetBoom",
+    "region": "Europe",
+    "country": "Russia",
+    "ranking": 12,
+    "coach": "fierce",
+    "description": "A highly competitive Russian team competing at the top level of professional Counter-Strike.",
+    "logo": "assets/images/teams/betboom-logo.png",
+    "heroImage": "assets/images/heroes/hero-betboom.png",
+    "playerIds": [
+      "boombl4",
+      "zorte",
+      "s1ren",
+      "d1ledez",
+      "magnojez"
+    ]
+  },
+  {
+    "id": "the-mongolz",
+    "name": "The MongolZ",
+    "shortName": "MongolZ",
+    "region": "Asia",
+    "country": "Mongolia",
+    "ranking": 13,
+    "coach": "maaraa",
+    "description": "One of Asia's strongest teams, known for aggressive play and explosive individual skill.",
+    "logo": "assets/images/teams/mongolz-logo.png",
+    "heroImage": "assets/images/heroes/hero-mongolz.png",
+    "playerIds": [
+      "blitz",
+      "techno",
+      "910",
+      "tikuak",
+      "darkmeister"
+    ]
+  },
+  {
+    "id": "pain-gaming",
+    "name": "paiN Gaming",
+    "shortName": "paiN",
+    "region": "South America",
+    "country": "Brazil",
+    "ranking": 16,
+    "coach": "rikz",
+    "description": "One of Brazil's most established Counter-Strike teams, known for strong teamwork and consistent international competition.",
+    "logo": "assets/images/teams/pain-logo.png",
+    "heroImage": "assets/images/heroes/hero-pain.png",
+    "playerIds": [
+      "vsm",
+      "biguzera",
+      "piriajr",
+      "saffee",
+      "snow"
+    ]
+  },
+  {
+    "id": "big",
+    "name": "BIG",
+    "shortName": "BIG",
+    "region": "Europe",
+    "country": "Germany",
+    "ranking": 18,
+    "coach": "xenn",
+    "description": "One of Germany's most established Counter-Strike organizations, known for experienced players and structured team play.",
+    "logo": "assets/images/teams/big-logo.png",
+    "heroImage": "assets/images/heroes/hero-big.png",
+    "playerIds": [
+      "tabsen",
+      "jdc",
+      "faven",
+      "blamef",
+      "gr1ks"
+    ]
+  }
+
+]

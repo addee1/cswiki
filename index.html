@@ -2,9 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSWiki</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
 
+<header class="site-header">
+    <div class="container site-header__content">
+        <a href="index.html" class="site-logo">
+            CS<span class="site-logo-second">Wiki</span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="#teams" class="main-nav__link active">Teams</a>
+            <a href="#players" class="main-nav__link">Players</a>
+            <a href="preferences.html" class="main-nav__link">Preferences</a>
+        </nav>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__visual">
+            <img
+                    src="assets/images/heroes/hero-vitality.png"
+                    alt="Team Falcons players"
+                    class="hero__image"
+                    id="favoriteTeamImage">
+        </div>
+        <div class="container hero__content">
+            <div class="hero__information">
+                <p class="hero__eyebrow">
+                    Your favorite team ☆
+                </p>
+                <h1 class="hero__title" id="favoriteTeamName">
+                    Team Falcons
+                </h1>
+                <p class="hero__description" id="favoriteTeamDescription">
+                    The sky is our limit. Soaring to the top of CS2 esports.
+                </p>
+                <a href="team-details.html?id=team-falcons" class="button button--primary" id="favoriteTeamLink">
+                    View team <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH / FILTER / SORT -->
+    <section class="team-controls">
+        <div class="container team-controls__content">
+            <div class="search-field">
+                <label for="teamSearch" class="visually-hidden">
+                    Search teams
+                </label>
+                <input type="search" id="teamSearch" placeholder="Search teams...">
+            </div>
+            <div class="custom-dropdown" data-dropdown="region">
+                <label for="regionFilter">Region</label>
+                <button type="button" class="custom-dropdown__button" aria-expanded="false">
+                    <span class="custom-dropdown__value">All Regions</span>
+                    <span class="custom-dropdown__arrow"></span>
+                </button>
+                <select id="regionFilter" class="custom-dropdown__native" tabindex="-1">
+                    <option value="all">All Regions</option>
+                </select>
+                <div class="custom-dropdown__menu"></div>
+            </div>
+            <div class="custom-dropdown" data-dropdown="sort">
+                <label for="teamSort">Sort By</label>
+                <button type="button" class="custom-dropdown__button" aria-expanded="false">
+                    <span class="custom-dropdown__value">World Ranking</span>
+                    <span class="custom-dropdown__arrow"></span>
+                </button>
+                <select id="teamSort" class="custom-dropdown__native" tabindex="-1">
+                    <option value="ranking">World Ranking</option>
+                    <option value="name-asc">Name A-Z</option>
+                    <option value="name-desc">Name Z-A</option>
+                </select>
+                <div class="custom-dropdown__menu"></div>
+            </div>
+            <button type="button" class="button button--secondary" id="resetFiltersButton">
+                Reset filters
+            </button>
+        </div>
+    </section>
+
+    <!-- TEAMS -->
+    <section class="teams-section section" id="teams">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__title-group">
+                    <h2 class="section-title">All Teams</h2>
+                    <span class="section-count" id="teamCount">0 teams</span>
+                </div>
+            </div>
+            <div class="team-grid" id="teamList">
+                <!-- Teams will render here -->
+            </div>
+            <nav class="pagination" id="teamPagination" aria-label="Team pages"></nav>
+        </div>
+    </section>
+
+    <!-- RANDOM PLAYERS -->
+    <section class="players-section section" id="players">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-header__title-group">
+                    <h2 class="section-title">
+                        Featured Players
+                    </h2>
+                </div>
+            </div>
+            <div class="player-grid" id="playerList">
+                <!-- players will render here -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container site-footer__content">
+        <div class="site-footer__brand">
+            <a href="index.html" class="site-logo">
+                <div class="site-logo__icon">
+                    CSWiki
+                </div>
+            </a>
+            <p>Your source for professional CS2 teams and players.</p>
+        </div>
+        <div class="site-footer__navigation">
+            <h3>Navigation</h3>
+            <a href="#teams">Teams</a>
+            <a href="#players">Players</a>
+            <a href="preferences.html">Preferences</a>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <p>© 2026 CSWiki. All rights reserved. Developed by Adam Ottosson</p>
+    </div>
+</footer>
 </body>
 </html>
