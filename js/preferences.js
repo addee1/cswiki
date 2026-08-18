@@ -21,7 +21,11 @@ async function loadTeams() {
         const response = await fetch("data/teams.json");
 
         if (!response.ok) {
-            throw new Error("Could not load teams.");
+            console.error("Could not load teams.");
+
+            preferencesTeamList.innerHTML = `<p>Could not load teams.</p>`;
+
+            return;
         }
 
         teams = await response.json();
