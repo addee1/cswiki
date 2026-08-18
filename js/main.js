@@ -10,6 +10,13 @@ const teamPagination = document.querySelector("#teamPagination");
 const playerList = document.querySelector("#playerList");
 const menuButton = document.querySelector("#menuButton");
 const mainNav = document.querySelector("#mainNav");
+const favoriteTeamImage = document.querySelector("#favoriteTeamImage");
+const favoriteTeamName = document.querySelector("#favoriteTeamName");
+const favoriteTeamDescription = document.querySelector("#favoriteTeamDescription");
+const favoriteTeamLink = document.querySelector("#favoriteTeamLink");
+const heroEyebrow = document.querySelector("#heroEyebrow");
+
+const playerSectionTitle = document.querySelector("#playerSectionTitle");
 
 let currentTeamPage = 1;
 let teams = [];
@@ -128,10 +135,6 @@ async function loadPlayers() {
 
         players = await response.json();
 
-        const randomPlayers = getRandomPlayers(players, 5);
-
-        renderPlayers(randomPlayers);
-
     } catch (error) {
         console.error(error);
 
@@ -240,6 +243,119 @@ function getRandomPlayers(players, amount) {
     }
 
     return shuffledPlayers.slice(0, amount);
+}
+
+
+/* GET FAVORITE TEAM */
+
+/*
+    Gets the favorite team saved in localStorage.
+
+    If no favorite team has been selected,
+    the function returns null.
+*/
+function getFavoriteTeam() {
+    const favoriteTeamId =
+        localStorage.getItem("favoriteTeam");
+
+    if (!favoriteTeamId) {
+        return null;
+    }
+
+    const favoriteTeam = teams.find(team => {
+        return team.id === favoriteTeamId;
+    });
+
+    return favoriteTeam || null;
+}
+
+
+/* DEFAULT HOMEPAGE Content */
+/*
+    Displays the default homepage content when
+    no favorite team has been selected.
+*/
+function showDefaultHomepage() {
+    heroEyebrow.textContent = "Discover CS2";
+
+    favoriteTeamName.textContent = "Professional CS2 Teams";
+
+    favoriteTeamDescription.textContent = "Explore professional Counter-Strike teams and players.";
+
+    favoriteTeamImage.src = "assets/images/heroes/hero-default.png";
+
+    favoriteTeamImage.alt = "Professional CS2 players";
+
+    favoriteTeamLink.href = "#teams";
+
+    favoriteTeamLink.innerHTML = `Browse teams <span>→</span>`;
+
+    playerSectionTitle.textContent = "Featured Players";
+
+    const randomPlayers =
+        getRandomPlayers(players, 5);
+
+    renderPlayers(randomPlayers);
+}
+
+
+/* FAVORITE TEAM HOMEPAGE */
+/*
+    Updates the homepage hero and player section
+    using the selected favorite team.
+*/
+function showFavoriteTeamHomepage(team) {
+    heroEyebrow.textContent = "Your favorite team ☆";
+
+    favoriteTeamName.textContent = team.name;
+
+    favoriteTeamDescription.textContent = team.description;
+
+    favoriteTeamImage.src = team.heroImage;
+
+    favoriteTeamImage.alt = `${team.name} players`;
+
+    favoriteTeamLink.href = `team-details.html?id=${team.id}`;
+
+    favoriteTeamLink.innerHTML = `View team <span>→</span>`;
+
+    playerSectionTitle.textContent = `${team.name} Players`;
+
+
+    const favoriteTeamPlayers =
+        team.playerIds
+            .map(playerId => {
+                return players.find(player => {
+                    return player.id === playerId;
+                });
+            })
+            .filter(player => player);
+
+
+    renderPlayers(favoriteTeamPlayers);
+}
+
+
+/* UPDATE HOMEPAGE */
+/*
+    Checks if the user has selected a favorite team.
+
+    If no favorite exists, the default hero and
+    five random players are displayed.
+
+    If a favorite exists, the hero and player section
+    are updated with that team's information.
+*/
+function updateHomepageContent() {
+    const favoriteTeam = getFavoriteTeam();
+
+    if (!favoriteTeam) {
+        showDefaultHomepage();
+
+        return;
+    }
+
+    showFavoriteTeamHomepage(favoriteTeam);
 }
 
 
@@ -486,5 +602,17 @@ window.addEventListener("resize", () => {
     }
 });
 
-loadTeams();
-loadPlayers();
+/* INITIALIZE HOMEPAGE */
+
+/*
+    Loads teams and players before the homepage
+    content is updated.
+*/
+async function initializeHomepage() {
+    await loadTeams();
+    await loadPlayers();
+
+    updateHomepageContent();
+}
+
+initializeHomepage();
