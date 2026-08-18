@@ -1,10 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSWiki - Preferences</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preferences.css">
+    <script src="js/preferences.js" defer></script>
 </head>
-<body>
 
+<body>
+<header class="site-header">
+    <div class="container site-header__content">
+        <a href="index.html" class="site-logo">
+            CS<span class="site-logo-second">Wiki</span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html#teams" class="main-nav__link">
+                Teams
+            </a>
+            <a href="index.html#players" class="main-nav__link">
+                Players
+            </a>
+            <a href="preferences.html" class="main-nav__link active">
+                Preferences
+            </a>
+        </nav>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="preferences-header">
+        <div class="container">
+            <p class="preferences-header__eyebrow">
+                Personalize CSWiki
+            </p>
+            <h1 class="preferences-header__title">
+                Preferences
+            </h1>
+            <p class="preferences-header__description">
+                Choose your favorite CS2 team to personalize the homepage.
+                Your selection will be saved in your browser.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAVORITE TEAM -->
+    <section class="preferences-section section">
+        <div class="container">
+            <!-- CURRENT FAVORITeE -->
+            <div class="current-favorite" id="currentFavorite">
+                <div class="current-favorite__content">
+                    <span class="current-favorite__label">
+                        Current favorite
+                    </span>
+                    <span class="current-favorite__name" id="currentFavoriteName">
+                        No favorite team selected
+                    </span>
+                </div>
+                <button type="button" class="button button--secondary remove-favorite-button" id="removeFavoriteButton" hidden>
+                    Remove favorite
+                </button>
+            </div>
+
+            <!-- TEAM LIST HEADER -->
+            <div class="section-header">
+                <div class="section-header__title-group">
+                    <h2 class="section-title">Choose Your Favorite Team</h2>
+                    <span class="section-count" id="preferencesTeamCount">
+                        0 teams
+                    </span>
+                </div>
+            </div>
+
+            <!-- TEAM LIST -->
+            <div class="preferences-team-list">
+                <div class="preferences-team-list__header">
+                    <span>Team</span>
+                    <span>Region</span>
+                    <span>Ranking</span>
+                    <span>Favorite</span>
+                </div>
+                <div class="preferences-team-list__body" id="preferencesTeamList">
+                    <!-- Teams will render here -->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container site-footer__content">
+        <div class="site-footer__brand">
+            <a href="index.html" class="site-logo">
+                <div class="site-logo__icon">
+                    CSWiki
+                </div>
+            </a>
+            <p>Your source for professional CS2 teams and players.</p>
+        </div>
+        <div class="site-footer__navigation">
+            <h3>Navigation</h3>
+            <a href="index.html#teams">Teams</a>
+            <a href="index.html#players">Players</a>
+            <a href="preferences.html">Preferences</a>
+        </div>
+    </div>
+    <div class="site-footer__bottom">
+        <p>© 2026 CSWiki. All rights reserved. Developed by Adam Ottosson</p>
+    </div>
+</footer>
 </body>
 </html>
