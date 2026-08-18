@@ -264,6 +264,43 @@
       "blamef",
       "gr1ks"
     ]
+  },
+  {
+    "id": "liquid",
+    "name": "Team Liquid",
+    "shortName": "Liquid",
+    "region": "North America",
+    "country": "North America",
+    "ranking": 20,
+    "coach": "flashie",
+    "description": "One of North Americas's most established Counter-Strike organizations, known for experienced players and structured team play.",
+    "logo": "assets/images/teams/liquid-logo.png",
+    "heroImage": "assets/images/heroes/hero-liquid.png",
+    "playerIds": [
+      "naf",
+      "elige",
+      "malbsmd",
+      "jt",
+      "jorko"
+    ]
+  },
+  {
+    "id": "thunderdownunder",
+    "name": "THUNDER dOWNUNDER",
+    "shortName": "THUNDER dOWNUNDER",
+    "region": "Australia",
+    "country": "Australia",
+    "ranking": 73,
+    "coach": "viridian",
+    "description": "One of Australias most established Counter-Strike organizations, known for experienced players and structured team play.",
+    "logo": "assets/images/teams/thunderdownunder-logo.webp",
+    "heroImage": "assets/images/heroes/hero-thunderdownunder.png",
+    "playerIds": [
+      "dexter",
+      "liazz",
+      "alistair",
+      "asap",
+      "tjp"
+    ]
   }
-
 ]

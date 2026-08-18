@@ -1,0 +1,359 @@
+
+/*  PAGE HEADER */
+.preferences-header {
+    padding-block: 55px;
+    background: radial-gradient(circle at 70% 0%, rgba(0, 230, 118, 0.08), transparent 45%), var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+
+    & .preferences-header__eyebrow {
+        margin-bottom: 8px;
+        color: var(--color-primary);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    & .preferences-header__title {
+        margin-bottom: 12px;
+        font-size: 42px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    & .preferences-header__description {
+        max-width: 650px;
+        color: var(--color-text-muted);
+        font-size: 16px;
+    }
+}
+
+
+/*  PREFERENCES SECTION */
+.preferences-section {
+    padding-top: 40px;
+}
+
+
+/* CURRENT FAVORITE */
+.current-favorite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 85px;
+    margin-bottom: 45px;
+    padding: 20px 24px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+
+    & .current-favorite__content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    & .current-favorite__label {
+        color: var(--color-text-muted);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    & .current-favorite__name {
+        color: var(--color-text);
+
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    &.has-favorite {
+        border-color: var(--color-primary);
+
+        & .current-favorite__name {
+            color: var(--color-primary);
+        }
+    }
+}
+
+
+/*  TEAM LIST */
+.preferences-team-list {
+    overflow: hidden;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+
+    & .preferences-team-list__header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 0.7fr 1.2fr;
+        gap: 20px;
+        padding: 14px 20px;
+        background-color: var(--color-background-light);
+        color: var(--color-text-muted);
+        border-bottom: 1px solid var(--color-border);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    & .preferences-team-list__body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* TEAM ROW */
+.preferences-team {
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.7fr 1.2fr;
+    align-items: center;
+    gap: 20px;
+    min-height: 90px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--color-border);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: var(--color-card-hover);
+    }
+
+    &.preferences-team--favorite {
+        background-color: rgba(0, 230, 118, 0.05);
+        box-shadow: inset 3px 0 0 var(--color-primary);
+    }
+
+    & .preferences-team__team {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        min-width: 0;
+    }
+
+    & .preferences-team__logo {
+        width: 58px;
+        height: 58px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    & .preferences-team__name {
+        color: var(--color-text);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    & .preferences-team__region {
+        color: var(--color-text-muted);
+        font-size: 14px;
+    }
+
+    & .preferences-team__ranking {
+        color: var(--color-text);
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    & .preferences-team__action {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    & .favorite-team-button {
+        min-width: 160px;
+        padding-inline: 18px;
+        white-space: nowrap;
+    }
+
+    & .preferences-team__selected {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 12px;
+        color: var(--color-primary);
+        background-color: rgba(0, 230, 118, 0.08);
+        border: 1px solid rgba(0, 230, 118, 0.35);
+        border-radius: var(--border-radius-small);
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+
+/* MEDIA QUERIES */
+/* TABLET */
+@media (max-width: 1100px) {
+    .preferences-header {
+        padding-block: 45px;
+
+        & .preferences-header__title {
+            font-size: 38px;
+        }
+    }
+
+    .preferences-team-list {
+        & .preferences-team-list__header {
+            grid-template-columns: 2fr 1fr 0.6fr 1.3fr;
+        }
+    }
+
+    .preferences-team {
+        grid-template-columns: 2fr 1fr 0.6fr 1.3fr;
+
+        & .preferences-team__logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        & .favorite-team-button {
+            min-width: 140px;
+
+            font-size: 11px;
+        }
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .preferences-header {
+        padding-block: 35px;
+
+        & .preferences-header__eyebrow {
+            font-size: 11px;
+        }
+
+        & .preferences-header__title {
+            font-size: 32px;
+        }
+
+        & .preferences-header__description {
+            font-size: 14px;
+        }
+    }
+
+    .preferences-section {
+        padding-top: 30px;
+    }
+
+    .current-favorite {
+        margin-bottom: 35px;
+        padding: 18px;
+
+        & .current-favorite__name {
+            font-size: 17px;
+        }
+    }
+
+    .preferences-team-list {
+        overflow: visible;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+
+        & .preferences-team-list__header {
+            display: none;
+        }
+
+        & .preferences-team-list__body {
+            gap: 12px;
+        }
+    }
+
+
+    .preferences-team {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px 20px;
+        min-height: 0;
+        padding: 16px;
+        background-color: var(--color-card);
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius-medium);
+
+        & .preferences-team__team {
+            grid-column: 1 / -1;
+        }
+
+        & .preferences-team__logo {
+            width: 55px;
+            height: 55px;
+        }
+
+        & .preferences-team__name {
+            font-size: 16px;
+        }
+
+        & .preferences-team__region {
+            &::before {
+                content: "Region";
+                display: block;
+                margin-bottom: 3px;
+                color: var(--color-text-muted);
+                font-size: 9px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        & .preferences-team__ranking {
+            text-align: right;
+
+            &::before {
+                content: "Ranking";
+                display: block;
+                margin-bottom: 3px;
+                color: var(--color-text-muted);
+                font-size: 9px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        & .preferences-team__action {
+            grid-column: 1 / -1;
+            justify-content: stretch;
+        }
+
+        & .favorite-team-button {
+            width: 100%;
+            min-width: 0;
+        }
+
+        & .preferences-team__selected {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+
+    .preferences-header {
+        & .preferences-header__title {
+            font-size: 28px;
+        }
+    }
+
+    .preferences-team {
+        & .preferences-team__logo {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
