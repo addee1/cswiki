@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSWiki | Team Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/teamdetails.css">
+    <script src="js/team-details.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container site-header__content">
+        <a href="index.html" class="site-logo">
+            CS<span class="site-logo-second">Wiki</span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+            <a href="index.html#teams" class="main-nav__link active">
+                Teams
+            </a>
+            <a href="index.html#players" class="main-nav__link">
+                Players
+            </a>
+            <a href="preferences.html" class="main-nav__link">
+                Preferences
+            </a>
+        </nav>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+
+<main>
+
+    <!-- TEAM NOT FOUND -->
+    <section class="team-not-found" id="teamNotFound" hidden>
+        <div class="container team-not-found__content">
+            <span class="team-not-found__code">
+                404
+            </span>
+            <h1>
+                Team not found
+            </h1>
+            <p>
+                The team you are looking for could not be found.
+            </p>
+            <a href="index.html#teams" class="button button--primary">
+                Back to teams <span>→</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- TEAM CONTENT -->
+    <div id="teamDetailsContent">
+        <!-- HERO -->
+        <section class="team-hero">
+            <div class="team-hero__visual">
+                <img src="" alt="" class="team-hero__background" id="teamHeroImage">
+                <div class="team-hero__overlay"></div>
+            </div>
+
+            <div class="container team-hero__content">
+                <div class="team-hero__information">
+                    <a href="index.html#teams" class="team-hero__back">
+                        ← Back to teams
+                    </a>
+                    <div class="team-hero__team">
+                        <img src="" alt="" class="team-hero__logo" id="teamLogo">
+
+                        <div class="team-hero__text">
+                            <p class="team-hero__eyebrow">
+                                Professional CS2 Team
+                            </p>
+                            <h1 class="team-hero__title" id="teamName">
+                                Team
+                            </h1>
+                            <p class="team-hero__description" id="teamDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM INFORMATION -->
+        <section class="team-information section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header__title-group">
+                        <h2 class="section-title">Team Overview</h2>
+                    </div>
+                </div>
+
+                <div class="team-information__grid">
+                    <article class="team-stat">
+                        <span class="team-stat__label">
+                            World Ranking
+                        </span>
+                        <span class="team-stat__value team-stat__value--ranking" id="teamRanking">#0</span>
+                    </article>
+
+                    <article class="team-stat">
+                        <span class="team-stat__label">
+                            Region
+                        </span>
+                        <span class="team-stat__value" id="teamRegion">
+                            -
+                        </span>
+                    </article>
+
+                    <article class="team-stat">
+                        <span class="team-stat__label">
+                            Country
+                        </span>
+                        <span class="team-stat__value" id="teamCountry">
+                            -
+                        </span>
+                    </article>
+
+                    <article class="team-stat">
+                        <span class="team-stat__label">
+                            Coach
+                        </span>
+                        <span class="team-stat__value" id="teamCoach">
+                            -
+                        </span>
+                    </article>
+
+                    <article class="team-stat">
+                        <span class="team-stat__label">
+                            Short Name
+                        </span>
+                        <span class="team-stat__value" id="teamShortName">
+                            -
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM ROSTER -->
+        <section class="team-roster section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header__title-group">
+                        <h2 class="section-title">
+                            Team Roster
+                        </h2>
+                        <span class="section-count" id="playerCount">
+                            0 players
+                        </span>
+                    </div>
+                </div>
+
+                <div class="player-grid" id="teamPlayerList">
+                    <!-- Players will render here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="reviews-section section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-header__title-group">
+                        <h2 class="section-title">
+                            Reviews
+                        </h2>
+                        <span class="section-count" id="reviewCount">
+                            0 reviews
+                        </span>
+                    </div>
+                </div>
+
+                <div class="reviews-layout">
+                    <!-- REVIEW FORM -->
+                    <div class="review-form-wrapper">
+                        <div class="review-form-header">
+                            <p class="review-form-header__eyebrow">
+                                Share your opinion
+                            </p>
+                            <h3 id="reviewFormTitle">
+                                Review this team
+                            </h3>
+                            <p>
+                                Tell other CS2 fans what you think about this team.
+                            </p>
+                        </div>
+
+                        <form class="review-form" id="reviewForm" novalidate>
+                            <div class="form-field">
+                                <label for="reviewName">
+                                    Your name
+                                </label>
+                                <input type="text" id="reviewName" name="reviewName" placeholder="Enter your name">
+                                <span class="form-error" id="reviewNameError"></span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reviewRating">
+                                    Rating
+                                </label>
+                                <select id="reviewRating" name="reviewRating">
+                                    <option value="">
+                                        Select rating
+                                    </option>
+                                    <option value="5">
+                                        5 - Excellent
+                                    </option>
+                                    <option value="4">
+                                        4 - Very good
+                                    </option>
+                                    <option value="3">
+                                        3 - Good
+                                    </option>
+                                    <option value="2">
+                                        2 - Fair
+                                    </option>
+                                    <option value="1">
+                                        1 - Poor
+                                    </option>
+                                </select>
+                                <span class="form-error" id="reviewRatingError"></span>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="reviewMessage">
+                                    Review
+                                </label>
+                                <textarea id="reviewMessage" name="reviewMessage" rows="6" placeholder="Write your review..."></textarea>
+                                <span class="form-error" id="reviewMessageError"></span>
+                            </div>
+
+                            <button type="submit" class="button button--primary">
+                                Submit review
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- REVIEW LIST -->
+                    <div class="review-list-wrapper">
+                        <div class="review-list" id="reviewList">
+                            <!-- Reviews will render here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container site-footer__content">
+        <div class="site-footer__brand">
+            <a href="index.html" class="site-logo">
+                <div class="site-logo__icon">
+                    CSWiki
+                </div>
+            </a>
+            <p>
+                Your source for professional CS2 teams and players.
+            </p>
+        </div>
+        <div class="site-footer__navigation">
+            <h3>
+                Navigation
+            </h3>
+            <a href="index.html#teams">
+                Teams
+            </a>
+            <a href="index.html#players">
+                Players
+            </a>
+            <a href="preferences.html">
+                Preferences
+            </a>
+        </div>
+    </div>
+
+    <div class="site-footer__bottom">
+        <p>
+            © 2026 CSWiki. All rights reserved. Developed by Adam Ottosson
+        </p>
+    </div>
+</footer>
+</body>
+</html>
