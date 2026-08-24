@@ -17,7 +17,7 @@
         height: 100%;
         display: block;
         object-fit: cover;
-        object-position: center right;
+        object-position: center;
     }
 
     & .team-hero__overlay {
