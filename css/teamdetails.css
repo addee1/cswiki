@@ -1,0 +1,475 @@
+/*  TEAM HERO */
+.team-hero {
+    position: relative;
+    min-height: 500px;
+    overflow: hidden;
+    background-color: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+
+    & .team-hero__visual {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    & .team-hero__background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    & .team-hero__overlay {
+        position: absolute;
+        inset: 0;
+        background:
+                linear-gradient(
+                        to right,
+                        rgba(5, 11, 15, 1) 0%,
+                        rgba(5, 11, 15, 0.95) 18%,
+                        rgba(5, 11, 15, 0.78) 35%,
+                        rgba(5, 11, 15, 0.38) 55%,
+                        rgba(5, 11, 15, 0.08) 75%,
+                        transparent 100%
+                );
+    }
+
+    & .team-hero__content {
+        position: relative;
+        z-index: 1;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    & .team-hero__information {
+        width: 100%;
+    }
+
+    & .team-hero__back {
+        display: inline-block;
+        margin-bottom: 35px;
+        color: var(--color-text-muted);
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    & .team-hero__team {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+
+    & .team-hero__logo {
+        width: 150px;
+        height: 150px;
+        flex-shrink: 0;
+        object-fit: contain;
+    }
+
+    & .team-hero__text {
+        max-width: 610px;
+    }
+
+    & .team-hero__eyebrow {
+        margin-bottom: 8px;
+        color: var(--color-primary);
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    & .team-hero__title {
+        margin-bottom: 15px;
+        color: var(--color-text);
+        font-size: 58px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    & .team-hero__description {
+        max-width: 580px;
+        color: var(--color-text-muted);
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+
+/* TEAM INFORMATION */
+.team-information {
+    background-color: var(--color-background-light);
+
+    & .team-information__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 16px;
+    }
+}
+
+.team-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-height: 115px;
+    padding: 22px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        border-color: #41505b;
+    }
+
+    & .team-stat__label {
+        color: var(--color-text-muted);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+
+    & .team-stat__value {
+        margin-top: auto;
+        color: var(--color-text);
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    & .team-stat__value--ranking {
+        color: var(--color-primary);
+        font-size: 28px;
+    }
+}
+
+
+/*  ROSTER*/
+.team-roster {
+    background-color: var(--color-background);
+}
+
+/* Using the player-grid / player-card structurefrom the homepage but adds spacing */
+.team-roster {
+    & .player-grid {
+        margin-top: 5px;
+    }
+}
+
+
+/*  REVIEWS*/
+.reviews-section {
+    background-color: var(--color-background-light);
+    border-top: 1px solid var(--color-border);
+
+    & .reviews-layout {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 35px;
+        align-items: start;
+    }
+}
+
+/* REVIEW FORM */
+.review-form-wrapper {
+    padding: 28px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+
+    & .review-form-header {
+        margin-bottom: 28px;
+    }
+
+    & .review-form-header__eyebrow {
+        margin-bottom: 5px;
+        color: var(--color-primary);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    & .review-form-header h3 {
+        margin-bottom: 6px;
+        color: var(--color-text);
+        font-size: 24px;
+    }
+
+    & .review-form-header p {
+        color: var(--color-text-muted);
+        font-size: 14px;
+    }
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    & label {
+        color: var(--color-text);
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    & input,
+    & select,
+    & textarea {
+        width: 100%;
+        padding: 13px 14px;
+        color: var(--color-text);
+        background-color: var(--color-background);
+        border: 1px solid var(--color-border);
+        border-radius: var(--border-radius-small);
+        font: inherit;
+        outline: none;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+            border-color: var(--color-primary);
+        }
+    }
+
+    & textarea {
+        resize: vertical;
+    }
+
+    & .form-error {
+        min-height: 15px;
+        color: #ff6b6b;
+        font-size: 11px;
+    }
+
+    & .button {
+        align-self: flex-start;
+    }
+}
+
+
+/* REVIEW LIST */
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-empty {
+    padding: 35px;
+    color: var(--color-text-muted);
+    text-align: center;
+    background-color: var(--color-card);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--border-radius-medium);
+}
+
+.review-card {
+    padding: 22px;
+    background-color: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+
+    & .review-card__header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 14px;
+    }
+
+    & .review-card__name {
+        color: var(--color-text);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    & .review-card__rating {
+        color: var(--color-primary);
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    & .review-card__message {
+        color: var(--color-text-muted);
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/*  TEAM NOT FOUND*/
+.team-not-found {
+    min-height: 650px;
+
+    & .team-not-found__content {
+        min-height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    & .team-not-found__code {
+        margin-bottom: 5px;
+        color: var(--color-primary);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    & h1 {
+        margin-bottom: 12px;
+        font-size: 46px;
+        text-transform: uppercase;
+    }
+
+    & p {
+        margin-bottom: 25px;
+        color: var(--color-text-muted);
+    }
+}
+
+/* MEDIA QUERIES */
+/*  TABLET */
+@media (max-width: 1100px) {
+
+    .team-hero {
+        & .team-hero__title {
+            font-size: 48px;
+        }
+
+        & .team-hero__logo {
+            width: 125px;
+            height: 125px;
+        }
+    }
+
+    .team-information {
+        & .team-information__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .reviews-section {
+        & .reviews-layout {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+
+/* MOBILE*/
+@media (max-width: 768px) {
+    .team-hero {
+        min-height: 480px;
+
+        & .team-hero__content {
+            min-height: 480px;
+        }
+
+        & .team-hero__overlay {
+            background:
+                    linear-gradient(
+                            to bottom,
+                            rgba(5, 11, 15, 0.35) 0%,
+                            rgba(5, 11, 15, 0.8) 40%,
+                            rgba(5, 11, 15, 1) 100%
+                    );
+        }
+
+        & .team-hero__background {
+            object-position: center;
+        }
+
+        & .team-hero__back {
+            margin-bottom: 25px;
+        }
+
+        & .team-hero__team {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        & .team-hero__logo {
+            width: 90px;
+            height: 90px;
+        }
+
+        & .team-hero__title {
+            font-size: 38px;
+        }
+
+        & .team-hero__description {
+            font-size: 14px;
+        }
+    }
+
+    .team-information {
+        & .team-information__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+    }
+
+    .team-stat {
+        min-height: 100px;
+        padding: 17px;
+
+        & .team-stat__value {
+            font-size: 17px;
+        }
+
+        & .team-stat__value--ranking {
+            font-size: 24px;
+        }
+    }
+
+    .reviews-section {
+        & .reviews-layout {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .review-form-wrapper {
+        padding: 20px;
+    }
+
+    .review-form {
+        & .button {
+            width: 100%;
+        }
+    }
+}
+
+
+/*  SMALL MOBILE */
+@media (max-width: 480px) {
+    .team-information {
+        & .team-information__grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .team-hero {
+        & .team-hero__title {
+            font-size: 32px;
+        }
+    }
+}
